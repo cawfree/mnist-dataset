@@ -1,0 +1,38 @@
+{
+  "name": "mnist-dataset",
+  "version": "0.0.1",
+  "description": "✍️ Yann LeCun's MNIST handwritten digit dataset, made available to Node.js.",
+  "main": "dist",
+  "keywords": [
+    "mnist",
+    "handwritten",
+    "handwriting",
+    "digit",
+    "number",
+    "dataset",
+    "neural",
+    "network",
+    "deep",
+    "learning"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist && uglifyjs dist/*.js -o dist/*.js",
+    "prettify": "yarn prettier --write \"**/*.js\"",
+    "test": "jest"
+  },
+  "repository": "https://github.com/cawfree/mnist-dataset",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "uglify-js": "^3.7.7"
+  }
+}
